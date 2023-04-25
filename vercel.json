@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "name": "Asliddin",
+  "name": "name-of-your-vercel-app",
   "builds": [
     {
       "src": "*.js",
