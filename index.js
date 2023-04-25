@@ -28,6 +28,7 @@ const errorMiddleware = require("./middleware/errorPage");
 
 const mongoUrl =
   "mongodb+srv://idasturjs:WJlkFeACzKTDk6ls@cluster0.u2txy.mongodb.net/idasturShop";
+const port = process.env.PORT || 5000;
 
 const hbs = expressHbs.create({
   defaultLayout: "main",
@@ -69,14 +70,5 @@ app.use(errorMiddleware);
 
 // const password = WJlkFeACzKTDk6ls;
 
-async function start() {
-  try {
-    await mongoose.connect(mongoUrl, { useNewUrlParser: true });
-    const port = process.env.PORT || 5000;
-    app.listen(port, () => console.log(`Server started on ${port}`));
-  } catch (e) {
-    console.log(e);
-  }
-}
-
-start();
+mongoose.connect(mongoUrl, { useNewUrlParser: true });
+app.listen(port, () => console.log(`Server started on ${port}`));
