@@ -10,6 +10,7 @@ const mongoose = require("mongoose");
 const session = require("express-session");
 const MongoStore = require("connect-mongo");
 const connectFalsh = require("connect-flash");
+const cors = require("cors");
 
 // router
 const routHome = require("./router/reouterHome");
@@ -29,6 +30,15 @@ const errorMiddleware = require("./middleware/errorPage");
 const mongoUrl =
   "mongodb+srv://idasturjs:WJlkFeACzKTDk6ls@cluster0.u2txy.mongodb.net/idasturShop";
 const port = process.env.PORT || 5000;
+
+// cors
+const corsOption = {
+  origin: "*",
+  credentials: true,
+  optionSuccessStatus: 200,
+};
+app.use(cors(corsOption));
+// the end
 
 const hbs = expressHbs.create({
   defaultLayout: "main",
