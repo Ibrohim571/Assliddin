@@ -1,0 +1,67 @@
+{{!-- <div class="container mt-4 mb-4 p-3 d-flex justify-content-center">
+  <div class="card p-4">
+    <div class=" image d-flex flex-column justify-content-center align-items-center"> <button
+        class="btnProfile btn-secondary">
+        <img src="https://i.imgur.com/wvxPV9S.png" height="100" width="100" /></button> <span class="name mt-3">Eleanor
+        Pena</span> <span class="idd">@eleanorpena</span>
+      <div class="d-flex flex-row justify-content-center align-items-center gap-2"> <span
+          class="idd1">Oxc4c16a645_b21a</span> <span><i class="fa fa-copy"></i></span> </div>
+      <div class="d-flex flex-row justify-content-center align-items-center mt-3"> <span class="number">1069 <span
+            class="follow">Followers</span></span> </div>
+      <div class=" d-flex mt-2"> <button class="btn1 btn-dark">Edit Profile</button> </div>
+      <div class="text mt-3"> <span>Eleanor Pena is a creator of minimalistic x bold graphics and digital
+          artwork.<br><br> Artist/ Creative Director by Day #NFT minting@ with FND night. </span> </div>
+      <div class="gap-3 mt-3 icons d-flex flex-row justify-content-center align-items-center"> <span><i
+            class="fa fa-twitter"></i></span> <span><i class="fa fa-facebook-f"></i></span> <span><i
+            class="fa fa-instagram"></i></span> <span><i class="fa fa-linkedin"></i></span> </div>
+      <div class=" px-2 rounded mt-4 date "> <span class="join">Joined May,2021</span> </div>
+    </div>
+  </div>
+</div> --}}
+{{!-- https://bbbootstrap.com/snippets/bootstrap-5-profile-card-animation-74461039 --}}
+
+<div class="container-fluid">
+  <div class="col s12 m8 offset-m2 l6 offset-l3">
+    <div class="card-panel grey lighten-5 z-depth-1">
+      <div class="row valign-wrapper">
+        <div class="col s2" style="margin-left: 1rem;">
+          {{#if user.avatarUrl}}
+          <img src="/{{user.avatarUrl}}" alt="{{user.name}}" class="responsive-img"
+            style="width: 160px; height: 100px; border-radius: 50px;">
+          <!-- notice the "circle" class -->
+          {{else}}
+          <i class="material-icons Large">account_circle</i>
+          {{/if}}
+        </div>
+        <div class="col s4" style="margin-left: 1rem;">
+          <p class="black-text">
+            <b>Name:</b> {{user.name}}
+          </p>
+          <p class="black-text">
+            <b>Email:</b> {{user.email}}
+          </p>
+        </div>
+        <div class="col m6">
+          <form action="/profile" method="POST" enctype="multipart/form-data">
+            <div class="input-field">
+              <input id="name" name="name" type="text" class="validate" required />
+              <label for="name">Enter Your Name</label>
+              <span class="helper-text" data-error="Enter Your Name"></span>
+            </div>
+            <div class="file-field input-field">
+              <div class="btn deep-orange accent-3">
+                <span>Photo</span>
+                <input type="file" name="avatar" />
+              </div>
+              <div class="file-path-wrapper">
+                <input class="file-path validate" type="text" placeholder="Upload one or more files" />
+              </div>
+            </div>
+            <button type="submit" class="btn deep-orange accent-4">Change Acaunt</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+{{!-- https://allinworld99.blogspot.com/2015/12/profile-details-with-image-using.html --}}

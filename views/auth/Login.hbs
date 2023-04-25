@@ -1,0 +1,55 @@
+<div class="row">
+  <div class="col s12 loginTab">
+    <ul class="tabs">
+      <li class="tab col s3"><a class="active" href="#login" style="font-size: 23px; color: rgb(7, 245, 34);">Log IN</a>
+      </li>
+      <li class="tab col s3"><a href="#register" style="font-size: 23px; color: rgb(7, 245, 34);">Sign UP</a></li>
+    </ul>
+  </div>
+  <div id="login" class="col s12">
+    <form action="/auth/login" method="POST" class="z-depth-4 f_control">
+      {{#if logError}}
+      <p class="alert">{{logError}}</p>
+      {{/if}}
+      <div class="input-field">
+        <input type="email" id="email" class="validate" name="email" required />
+        <label for="email">Email</label>
+        <span class="helper-text" data-error="Enter Your Email"></span>
+      </div>
+      <div class="input-field">
+        <input type="password" id="password" class="validate" name="password" required min="1" />
+        <label for="password">Password</label>
+        <span class="helper-text" data-error="Enter Password"></span>
+      </div>
+      <button class="btn waves-effect waves-light">LOG IN</button>
+    </form>
+  </div>
+  <div id="register" class="col s12">
+    <form action="/auth/register" method="POST" class="z-depth-4 f_control">
+      {{#if registerError}}
+      <p class="alert">{{registerError}}</p>
+      {{/if}}
+      <div class="input-field">
+        <input type="text" id="rname" class="validate" name="name" required />
+        <label for="rname">Name</label>
+        <span class="helper-text" data-error="Enter Your name"></span>
+      </div>
+      <div class="input-field">
+        <input type="email" id="remail" class="validate" name="email" required />
+        <label for="remail">Email</label>
+        <span class="helper-text" data-error="Enter Your Email"></span>
+      </div>
+      <div class="input-field">
+        <input type="number" id="rpassword" class="validate" name="password" required />
+        <label for="rpassword">Password</label>
+        <span class="helper-text" data-error="Enter Password"></span>
+      </div>
+      <div class="input-field">
+        <input type="number" id="trpassword" class="validate" name="tpassword" required />
+        <label for="trpassword">Password</label>
+        <span class="helper-text" data-error="Return Password"></span>
+      </div>
+      <button class="btn waves-effect waves-light">SIGN IN</button>
+    </form>
+  </div>
+</div>

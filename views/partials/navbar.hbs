@@ -1,0 +1,18 @@
+<nav class="indigo darken-4">
+  <div class="nav-wrapper">
+    <a href="#" class="brand-logo">Logo</a>
+    <ul id="nav-mobile" class="right hide-on-med-and-down">
+      <li {{#if isHome}} class="active" {{/if}}><a href="/">Home</a></li>
+      <li {{#if isNotebooks}} class="active" {{/if}}><a href="/notebooks">Notebooks</a></li>
+      {{#if isAuth}}
+      <li {{#if isAdd}} class="active" {{/if}}><a href="/add">Add notebooks</a></li>
+      <li {{#if isCard}} class="active" {{/if}}><a href="/card">Backet</a></li>
+      <li {{#if isOrder}} class="active" {{/if}}><a href="/orders">Order</a></li>
+      <li {{#if isProfile}} class="active" {{/if}}><a href="/profile">Profile</a></li>
+      <li><a href="/auth/logout">LOG OUT</a></li>
+      {{else}}
+      <li {{#if isLogin}} class="active" {{/if}}><a href="/auth#login">Sign In</a></li>
+      {{/if}}
+    </ul>
+  </div>
+</nav>

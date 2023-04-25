@@ -1,0 +1,37 @@
+[
+  {
+    "title": "lenovo",
+    "price": "1000",
+    "img": "https://www.lenovo.com/medias/lenovo-laptop-yoga-duet-7i-gen6-front.png?context=bWFzdGVyfHJvb3R8NTUwMDJ8aW1hZ2UvcG5nfGg2Ny9oMGUvMTE2ODc5MzQ4NTMxNTAucG5nfGVjMGI2ZjMyYzdjNzFjOTZiMjgyNTJmMjVhYzczMjE2NmY1N2RjOWE0NDYyZmQxNzYwZmE1MWNhMGQyYThiODM",
+    "id": "0d44bede-6d38-4f27-94d3-ba54b057e3ac",
+    "descr": "Процессоры Intel® Core™ 10-го поколения и видеокарты NVIDIA®\r\nКристально четкое изображение на 15-дюймовом дисплее стандарта FHD с ультратонкими рамками\r\nЕмкий аккумулятор с бесконечными возможностями для творчества"
+  },
+  {
+    "title": "hp",
+    "price": "12000",
+    "img": "https://www.lenovo.com/medias/lenovo-laptop-yoga-duet-7i-gen6-front.png?context=bWFzdGVyfHJvb3R8NTUwMDJ8aW1hZ2UvcG5nfGg2Ny9oMGUvMTE2ODc5MzQ4NTMxNTAucG5nfGVjMGI2ZjMyYzdjNzFjOTZiMjgyNTJmMjVhYzczMjE2NmY1N2RjOWE0NDYyZmQxNzYwZmE1MWNhMGQyYThiODM",
+    "descr": "vБыстрые процессоры Intel® Core™ 11-го поколенияЧеткий 13,3-дюймовый 2K-дисплей стандарта WQHDШирокие возможности для подключения к сети с помощь",
+    "id": "0ea4bce5-adcb-44d7-9643-aa88f20a0dd7"
+  },
+  {
+    "title": "aser",
+    "price": "1200",
+    "img": "https://static.acer.com/up/Resource/Acer/Laptops/Swift_X/Images/20210924/Swift-X-SFX16-51G-FpBl-modelpreview.png",
+    "descr": "Slim, lightweight and stylish, the Swift 3 is the ideal laptop for working on the move. The latest Intel® CPU and long battery life are housed inside a choice of displays: an elegantly silver chassis with a 13.5” 3:2 ratio 2256x1504 IPS VertiView Display or the vivid colors of a 14” 16:9 FHD IPS display.",
+    "id": "d407a189-7b63-46ba-8def-1d1971ea0514"
+  },
+  {
+    "title": "hp",
+    "price": "1200",
+    "img": "https://static.acer.com/up/Resource/Acer/Laptops/Swift_7/Image/20190226/swift_7_SF714-52T-Black-Budlight_AL_preview.png",
+    "id": "966ab8f5-be44-494e-a831-1f91daec41cd",
+    "descr": "Engineered for creation and play, the Swift X houses the latest 11th Gen Intel® Core™ H35 series processors,1 and the supercharged NVIDIA® GeForce RTX™ 3050 Ti GPU.1 With 16\" for more room to perform, unleash the Swift X on your next project."
+  },
+  {
+    "title": "macbook pro",
+    "price": "1500",
+    "img": "https://static.acer.com/up/Resource/Acer/Laptops/Swift_3/Image/20210310/Acer-Swift-3_SF313-53-53G_FP-Backlit_Silver_modelpreview_evo.png",
+    "id": "fb618904-a5ce-4c7e-9419-d69bd7f49510",
+    "descr": "Slim, lightweight and stylish, the Swift 3 is the ideal laptop for working on the move. The latest Intel® CPU and long battery life are housed inside a choice of displays: an elegantly silver chassis with a 13.5” 3:2 ratio 2256x1504 IPS VertiView Display or the vivid colors of a 14” 16:9 FHD IPS display."
+  }
+]

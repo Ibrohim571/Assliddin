@@ -1,0 +1,26 @@
+<form action="/add" method="POST" class="z-depth-4 f_control">
+  {{#if addError}}
+  <p class="alert">{{addError}}</p>
+  {{/if}}
+  <div class="input-field">
+    <input type="text" id="title" class="validate" name="title" value="{{titles}}" required />
+    <label for="title">Notebooks model</label>
+    <span class="helper-text" data-error="Enter Noutbook name"></span>
+  </div>
+  <div class="input-field">
+    <input type="number" id="price" class="validate" name="price" value="{{price}}" required min="1" />
+    <label for="price">Price</label>
+    <span class="helper-text" data-error="Enter Price"></span>
+  </div>
+  <div class="input-field">
+    <input type="text" id="img" class="validate" name="img" value="{{img}}" required />
+    <label for="img">URL Image</label>
+    <span class="helper-text" data-error="Enter Noutbook name"></span>
+  </div>
+  <div class="input-field">
+    <input type="text" id="descr" class="validate" name="descr" value="{{descr}}" required />
+    <label for="descr">Description</label>
+    <span class="helper-text" data-error="Enter Description"></span>
+  </div>
+  <button class="btn btn-primary">Add notebooks</button>
+</form>
