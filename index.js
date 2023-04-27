@@ -50,7 +50,7 @@ const hbs = expressHbs.create({
 app.use(express.urlencoded({ extended: true }));
 app.use(express.static("public"));
 // app.use("/images", express.static(path.join(__dirname, "images")));
-app.use("/images", express.static("/images"));
+app.use("/images", express.static("images"));
 app.engine("hbs", hbs.engine);
 app.set("view engine", "hbs");
 app.set("views", "views");
@@ -81,5 +81,8 @@ app.use(errorMiddleware);
 
 // const password = WJlkFeACzKTDk6ls;
 
-mongoose.connect(mongoUrl, { useNewUrlParser: true });
+mongoose.connect(mongoUrl, { useNewUrlParser: true }, () => {
+  console.log("Mongo is worked");
+});
+
 app.listen(port, () => console.log(`Server started on ${port}`));
